@@ -21,17 +21,17 @@ wget https://github.com/legluondunet/MyLittleLutrisScripts/raw/master/Star%20War
 7z x -aoa .
 
 # install mods
-mkdir -p "../GOG Games/Star Wars - KotOR/override"
-cp "16-by-9/gui.1920x1080/"* "../GOG Games/Star Wars - KotOR/override"
-cp "[K1]_Main_Menu_Widescreen_Fix_v1.2/For Override/"* "../GOG Games/Star Wars - KotOR/override"
-cp "HD MENU AND UI Art v 1.0/"* "../GOG Games/Star Wars - KotOR/override"
-cp "hd_pc_portraits/Override/"* "../GOG Games/Star Wars - KotOR/override"
-cp "hd_npc_portraits/Override/"* "../GOG Games/Star Wars - KotOR/override"
-cp "KoToR1IconMOD/Override/"* "../GOG Games/Star Wars - KotOR/override"
-cp "movies_HD/1920x1080/"* "../GOG Games/Star Wars - KotOR/movies"
+mkdir -p "../GOG Games/Star Wars - Knights of the Old Republic/Override"
+cp "16-by-9/gui.1920x1080/"* "../GOG Games/Star Wars - Knights of the Old Republic/Override"
+cp "[K1]_Main_Menu_Widescreen_Fix_v1.2/For Override/"* "../GOG Games/Star Wars - Knights of the Old Republic/Override"
+cp "HD MENU AND UI Art v 1.0/"* "../GOG Games/Star Wars - Knights of the Old Republic/Override"
+cp "hd_pc_portraits/Override/"* "../GOG Games/Star Wars - Knights of the Old Republic/Override"
+cp "hd_npc_portraits/Override/"* "../GOG Games/Star Wars - Knights of the Old Republic/Override"
+cp "KoToR1IconMOD/Override/"* "../GOG Games/Star Wars - Knights of the Old Republic/Override"
+cp "movies_HD/1920x1080/"* "../GOG Games/Star Wars - Knights of the Old Republic/movies"
 
 # widescreen patch
-cd "../GOG Games/Star Wars - KotOR/"
+cd "../GOG Games/Star Wars - Knights of the Old Republic/"
 wget https://github.com/legluondunet/MyLittleLutrisScripts/raw/master/Star%20Wars%20-%20Knights%20of%20the%20Old%20Republic/resolution_patchs/swkotor1_gog_ws_1920x1080.patch
 cp swkotor.exe swkotor.exe.ori
 LD_LIBRARY_PATH=/usr/lib patch < swkotor1_gog_ws_1920x1080.patch swkotor.exe
